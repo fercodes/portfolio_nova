@@ -1,48 +1,18 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { PerspectiveCamera } from '@react-three/drei';
-import { Leva, useControls } from 'leva';
 import CanvasLoader from '../components/CanvasLoader';
 import Hero3d from '../components/Hero3d';
+import { useMediaQuery } from 'react-responsive';
 
 const Hero = () => {
-  const controls = useControls('Hero3d', {
-    positionX: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionY: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionZ: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationX: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationY: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationZ: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    scale: {
-      value: 1,
-      min: 0.1,
-      max: 10,
-    },
-  });
+  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  //Changes size according to the screen. Unused for now, since looks good on all screens.
+  /*
+  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  */
 
   return (
     <section className="min-h-screen w-full flex flex-col relative bg-slate-900">
@@ -56,26 +26,15 @@ const Hero = () => {
       </div>
 
       <div className="w-full h-full absolute inset-0">
-        <Leva />
+        {/*<Leva />*/}
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
             <Hero3d
-              // scale={2}
-              // position={[0, 0, 0]}
-              // rotation={[0, 280, 0]}
-              position={[
-                controls.positionX,
-                controls.positionY,
-                controls.positionZ,
-              ]}
-              rotation={[
-                controls.rotationX,
-                controls.rotationY,
-                controls.rotationZ,
-              ]}
-              scale={[controls.scale, controls.scale, controls.scale]}
+              position={[0.0, -6.8, 1.1]}
+              rotation={[0.0, 2.8, 0.0]}
+              scale={isMobile ? 2.9 : 3.1}
             />
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
