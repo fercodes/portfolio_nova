@@ -15,7 +15,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl px-8 mx-auto">
         <div className="bg-gray-800 rounded-lg p-6">
           <h3 className="text-white text-xl font-semibold mb-4">
             My tech stack
