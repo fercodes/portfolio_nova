@@ -1,11 +1,11 @@
 const About = () => {
   return (
-    <section className="c-space bg-slate-900 py-24" id="about">
-      <div className="flex flex-col items-center mb-16">
+    <section className="c-space bg-slate-900 py-20" id="about">
+      <div className="flex flex-col items-center mb-12">
         <img
           src="assets/nova.png"
           alt="nova"
-          className="h-[276px] rounded-full mb-16"
+          className="h-[256px] rounded-full mb-12"
         />
         <p className="text-center max-w-2xl px-4 text-white text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus,
@@ -16,7 +16,7 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl px-8 mx-auto">
-        <div className="bg-gray-800 rounded-lg p-6">
+        <div className="bg-gray-800 rounded-lg p-6 border border-white-700 hover-effect">
           <h3 className="text-white text-xl font-semibold mb-4">
             My tech stack
           </h3>
@@ -120,7 +120,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-gray-800 rounded-lg p-6">
+        <div className="bg-gray-800 rounded-lg p-6 border border-white-700 hover-effect">
           <h3 className="text-white text-xl font-semibold mb-4">Skills</h3>
           <ul className="text-white space-y-2">
             <li>Spanish - native</li>

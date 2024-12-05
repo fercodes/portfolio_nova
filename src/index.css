@@ -65,6 +65,10 @@ body {
     @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
   }
 
+  .hover-effect {
+    @apply transition-all duration-500 hover:border-black hover:scale-105 active:scale-95 active:rotate-[1.7deg];
+  }
+
   .grid-headtext {
     @apply text-xl font-semibold mb-2 text-white font-generalsans;
   }
