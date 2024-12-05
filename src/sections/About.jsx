@@ -16,7 +16,7 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl px-8 mx-auto">
-        <div className="bg-gray-800 rounded-lg p-6 border border-white-700 hover-effect">
+        <div className="bg-gray-800 rounded-3xl p-6 border border-white-700 hover-effect">
           <h3 className="text-white text-xl font-semibold mb-4">
             My tech stack
           </h3>
@@ -120,7 +120,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-gray-800 rounded-lg p-6 border border-white-700 hover-effect">
+        <div className="bg-gray-800 rounded-3xl p-6 border border-white-700 hover-effect">
           <h3 className="text-white text-xl font-semibold mb-4">Skills</h3>
           <ul className="text-white space-y-2">
             <li>Spanish - native</li>
