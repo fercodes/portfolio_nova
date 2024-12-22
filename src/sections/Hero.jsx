@@ -1,10 +1,11 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { PerspectiveCamera } from '@react-three/drei';
-import CanvasLoader from '../components/CanvasLoader';
-import Hero3d from '../components/Hero3d';
 import { useMediaQuery } from 'react-responsive';
-import Button from '../components/Button';
+
+import CanvasLoader from '../components/CanvasLoader.jsx';
+import Hero3d from '../components/Hero3d.jsx';
+import Button from '../components/Button.jsx';
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
