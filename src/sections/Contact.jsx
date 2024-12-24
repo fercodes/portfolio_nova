@@ -21,7 +21,7 @@ const Contact = () => {
   const handleSubmit = () => {};
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space bg-slate-900 py-20">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
@@ -32,7 +32,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col space-y-7"
+            className="mt-6 flex flex-col space-y-7"
           >
             <label className="space-y-3">
               <span className="field-label">Full name</span>

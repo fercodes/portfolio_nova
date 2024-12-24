@@ -25,16 +25,16 @@ const Projects = () => {
   const CurrentModelComponent = currentProject.modelComponent;
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space py-13 bg-slate-900">
       <p className="head-text">My work</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
+        <div className="flex flex-col gap-5 relative sm:p-32 py-10 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
             <img
               src={currentProject.spotlight}
               alt="spotlight"
-              className="w-full h-96 object-cover rounded-xl"
+              className="w-full h-256 object-cover rounded-xl"
             />
           </div>
 
@@ -46,7 +46,7 @@ const Projects = () => {
             <p className="animatedText">{currentProject.desc}</p>
           </div>
 
-          <div className="flex justify-between items-center mt-7">
+          <div className="flex justify-between items-center mt-24">
             <button
               className="arrow-btn z-10"
               onClick={() => handleNavigation('previous')}
@@ -77,14 +77,18 @@ const Projects = () => {
               <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
               <Center>
-                <group scale={2} position={[0, -1, 0]} rotation={[0, -0.1, 0]}>
+                <group
+                  scale={4.3}
+                  position={[0, -8, 0]}
+                  rotation={[0, -0.1, 0]}
+                >
                   <CurrentModelComponent />
                 </group>
               </Center>
 
               <ambientLight intensity={Math.PI} />
               <directionalLight position={[10, 10, 5]} />
-              <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
+              <OrbitControls maxPolarAngle={Math.PI} enableZoom={true} />
             </Suspense>
           </Canvas>
         </div>
