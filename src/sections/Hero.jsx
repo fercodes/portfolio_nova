@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import Hero3d from '../components/Hero3d.jsx';
+import Background3d from '../components/Background3d.jsx';
 import Button from '../components/Button.jsx';
 
 const Hero = () => {
@@ -40,6 +41,11 @@ const Hero = () => {
               position={[0.0, -6.8, 1.1]}
               rotation={[0.0, 2.8, 0.0]}
               scale={isMobile ? 2.9 : 3.1}
+            />
+            <Background3d
+              position={[0.0, -6.8, 1.1]}
+              rotation={[0.0, 2.8, 0.0]}
+              scale={isMobile ? 3.9 : 4.1}
             />
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
