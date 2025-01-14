@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <section className="c-space bg-slate-900 py-20" id="about">
+    <section
+      className="c-space bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-20"
+      id="about"
+    >
       <div className="flex flex-col items-center mb-12">
         <img
           src="assets/nova.png"

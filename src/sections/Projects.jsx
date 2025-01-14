@@ -25,7 +25,10 @@ const Projects = () => {
   const CurrentModelComponent = currentProject.modelComponent;
 
   return (
-    <section className="c-space py-13 bg-slate-900">
+    <section
+      className="c-space bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-20"
+      id="work"
+    >
       <p className="head-text">My work</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">

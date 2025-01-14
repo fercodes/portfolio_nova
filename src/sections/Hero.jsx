@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section
-      className="min-h-screen w-full flex flex-col relative bg-slate-900"
+      className="min-h-screen w-full flex flex-col relative bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950"
       id="home"
     >
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
@@ -52,12 +52,18 @@ const Hero = () => {
           </Suspense>
         </Canvas>
       </div>
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+      <div className="flex gap-5 items-center justify-center absolute bottom-7 w-full z-10 c-space">
         <a href="#contact" className="w-fit">
           <Button
-            name="Let's work together"
+            name="Contact me"
             isBeam
-            containerClass="sm:w-fit w-full sm:min-w-96"
+            containerClass="sm:min-w-48 w-full lg:min-w-96"
+          />
+        </a>
+        <a href="#work" className="w-fit">
+          <Button
+            name="See my work"
+            containerClass="sm:min-w-48 w-full lg:min-w-96"
           />
         </a>
       </div>

@@ -21,7 +21,10 @@ const Contact = () => {
   const handleSubmit = () => {};
 
   return (
-    <section className="c-space bg-slate-900 py-20">
+    <section
+      className="c-space bg-[url('/background.png')] bg-slate-900 py-4"
+      id="contact"
+    >
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
