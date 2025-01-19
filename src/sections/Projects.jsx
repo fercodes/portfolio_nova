@@ -27,7 +27,7 @@ const Projects = () => {
 
   return (
     <section
-      className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-16"
+      className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-24"
       id="work"
     >
       <p className="text-center text-white text-4xl font-bold mb-10">My work</p>
