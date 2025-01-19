@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { PerspectiveCamera } from '@react-three/drei';
+import { PerspectiveCamera, OrbitControls } from '@react-three/drei';
 import { useMediaQuery } from 'react-responsive';
 
 import CanvasLoader from '../components/CanvasLoader.jsx';
@@ -31,7 +31,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="w-full h-full absolute inset-0">
+      <div className="w-full md:h-[100vh] h-[80vh] absolute inset-0">
         {/*<Leva />*/}
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
@@ -49,6 +49,7 @@ const Hero = () => {
             />
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
+            <OrbitControls maxPolarAngle={Math.PI} enableZoom={true} />
           </Suspense>
         </Canvas>
       </div>

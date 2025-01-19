@@ -3,6 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        bigscreen: '1920px',
+        // => @media (min-width: 1920px) { ... }
+      },
       fontFamily: {
         generalsans: ['General Sans', 'sans-serif'],
       },
