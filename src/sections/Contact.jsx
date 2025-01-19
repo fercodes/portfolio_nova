@@ -28,12 +28,12 @@ const Contact = () => {
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
-          <p className="text-lg text-white-600 mt-3">
+          <p className="text-lg text-white mt-3">
             If you want to create new 3d models, or have new ideas for
             Minecraft, I'm you person. Let's collaborate!
           </p>
 
-          <div className="flex gap-3 justify-center py-2">
+          <div className="flex gap-3 justify-center mt-5">
             <div className="social-icon">
               <a
                 href="https://github.com/innova67"

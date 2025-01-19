@@ -30,7 +30,7 @@ const Projects = () => {
       className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 py-16"
       id="work"
     >
-      <p className="text-center text-white text-4xl font-bold mb-10">My Work</p>
+      <p className="text-center text-white text-4xl font-bold mb-10">My work</p>
 
       {/* Desktop Grid */}
       <div className="hidden md:grid grid-cols-4 grid-rows-3 gap-6 px-8 pb-10">
