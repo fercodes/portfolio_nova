@@ -53,7 +53,7 @@ const Hero = () => {
           </Suspense>
         </Canvas>
       </div>
-      <div className="flex gap-5 items-center justify-center absolute bottom-7 w-full z-10 c-space">
+      <div className="flex gap-5 items-center justify-center absolute bottom-28 w-full z-10 c-space">
         <a href="#contact" className="w-fit">
           <Button
             name="Contact me"
